@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Install') { 
             steps {
-                bat 'npm install' 
+                sh 'npm install' 
             }
         }
         // stage('Test') { 
@@ -18,7 +18,7 @@ pipeline {
                 // bat 'npm run build'
                 // bat 'npm install -g serve'
                 // bat 'serve -s build -l 3000'
-                bat 'npm run deploy'
+                sh 'npm run deploy'
             }
         }
     }
