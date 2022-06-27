@@ -5,7 +5,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Test Alla 1
+          Test Alla 2
         </p>
         <a
           className="App-link"
