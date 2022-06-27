@@ -20,6 +20,7 @@ pipeline {
                 // bat 'serve -s build -l 3000'
                 sh 'git config --global user.email "alla.rakhimova103@gmail.com"'
                 sh 'git config --global user.name "Alla Rakhimova"'
+                sh 'rm -rf node_modules/.cache/gh-pages'
                 sh 'npm run deploy'
             }
         }
