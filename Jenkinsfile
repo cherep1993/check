@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Install') { 
             steps {
-                bat 'npm install' 
+                sh 'npm install' 
             }
         }
         // stage('Test') { 
@@ -18,9 +18,9 @@ pipeline {
                 // bat 'npm run build'
                 // bat 'npm install -g serve'
                 // bat 'serve -s build -l 3000'
-                bat 'git config --global user.email "alla.rakhimova103@gmail.com"'
-                bat 'git config --global user.name "Alla Rakhimova"'
-                bat 'npm run deploy'
+                sh 'git config --global user.email "alla.rakhimova103@gmail.com"'
+                sh 'git config --global user.name "Alla Rakhimova"'
+                sh 'npm run deploy'
             }
         }
     }
